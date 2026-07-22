@@ -1,0 +1,85 @@
+最长连续序列
+
+✅盛水最多容器   规律：若左<右，则只能通过移动左边来寻找最大值
+✅三数之和      数组方法：Arrays.sort(nums),   nums.length-1;   Arrays.asList()   new ArrayList<>().add()
+✅接雨水       规律：min(最大前缀，最大后缀)-当前高度=当前桶可容纳最大值
+
+无重复字符的最长字串  String 长度 string.length()   第k个位置字符串 (s.charAt(i))   转为char  char [] ss=s.toCharArray();
+
+⚠️和为k的子数组
+滑动窗口最大值
+⚠️209长度最小的子数组   Integer.MAX_VALUE;
+✅713 乘积小于k的子数组   //结果计算：当窗口 [left, i] 满足条件（乘积 < k）时，以 i 为右端点的所有合法子数组个数 正好是 i - left + 1。
+
+最大子数组和
+✅56 合并区间 。
+List的大小：List<String> list = new ArrayList<>()  ,list.size();
+数组排序： Arrays.sort(intervals,(p,q)->(p[0]-q[0]));
+list转自定义数组 。return ans.toArray(new int[ans.size()][]);
+
+✅54 螺旋矩阵 。思路很巧妙，注意边界条件 。数组ans转为list :  return Arrays.asList(ans);
+
+
+/*第一个节点可能被删除时候要用dummynode
+*/
+✅206 反转链表      新建pre节点,nxt节点 。 更新: while cur: pre=cur,cur=next
+✅92 反转链表2
+回文链表
+✅141 环形链表     只要是环形链表，快慢指针就会相遇
+⚠️环形链表2 。   数学公式
+✅合并两个有序链表
+✅25 k个一组翻转链表
+✅合并k个升序链表 。（⚠️优化方法）
+✅146LRU     private final Map<Integer, Integer> cache = new LinkedHashMap<>();
+keySet()方法获取Map中所有键的集合
+put(key,value)添加元素
+remove(key)删除元素
+get(key)获得元素
+size()：返回Map中键值对的数量。
+
+
+
+/**本节点+递归左右节点
+Queue : 先进先出。特点：只能从尾部入队（offer/add），从头部出队（poll/remove）
+Deque :（双端队列）— 两端都能操作。特点：头部和尾部都可以入队和出队，因此它同时实现了 Queue 和 Stack 的功能。push从头部入队，add从尾部入队
+/
+✅二叉树的中序遍历（递归+迭代）
+// 获取并删除队头元素   String head = queue.poll();
+// 获取但不删除队头元素  String peek = queue.peek();
+✅101 对称二叉树    参考100计算相同二叉树的思路
+✅二叉树的层序遍历
+从前序和中序遍历构造二叉树
+✅二叉树的最近公共祖先 。 结合动画记忆
+路径总和3
+⚠️二叉树的右视图
+
+
+✅岛屿数量   思路有意思。二维数组表示方法 。int[][] dirs = new int[][]{{1,0},{-1,0},{0,-1},{0,1}};
+
+String 类型变量 String digits ,  digits.length()
+
+✅子集 （模版背）
+✅全排列  (模版背）
+✅组合总和
+✅组合总和3
+✅组合
+✅括号生成
+✅单词搜索 (还是背)
+✅分割回文字串(枚举逗号的位置) 。s.substring(i,j+1)
+
+
+数组中的第k个最大元素（快速选择+堆排序）
+前k个高频元素
+
+爬楼梯
+打家劫舍1/2
+买卖股票最佳时机1/2/3
+零钱兑换
+单词拆分
+最长递增子序列
+最长回文子串
+最长公共子序列
+编辑距离
+
+
+快速排序/冒泡排序
