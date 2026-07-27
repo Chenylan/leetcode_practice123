@@ -1,9 +1,7 @@
 常考题目
-对自己的分支进行修改
-第四次修改
 
-✅最长连续序列 (记思路)。 集合用法： Set<Integer> st = new HashSet<>(); st.contains(x)
 
+最长连续序列
 
 ✅盛水最多容器   规律：若左<右，则只能通过移动左边来寻找最大值
 ✅三数之和      数组方法：Arrays.sort(nums),   nums.length-1;   Arrays.asList()   new ArrayList<>().add()
@@ -12,7 +10,7 @@
 无重复字符的最长字串  String 长度 string.length()   第k个位置字符串 (s.charAt(i))   转为char  char [] ss=s.toCharArray();
 
 ⚠️和为k的子数组
-✅滑动窗口最大值 。   一共有(n-k+1)个窗口，如何构造递减队列？  常规方法和自己写的超时方法
+滑动窗口最大值
 ⚠️209长度最小的子数组   Integer.MAX_VALUE;
 ✅713 乘积小于k的子数组   //结果计算：当窗口 [left, i] 满足条件（乘积 < k）时，以 i 为右端点的所有合法子数组个数 正好是 i - left + 1。
 
@@ -47,7 +45,6 @@ size()：返回Map中键值对的数量。
 /**本节点+递归左右节点
 Queue : 先进先出。特点：只能从尾部入队（offer/add），从头部出队（poll/remove）
 Deque :（双端队列）— 两端都能操作。特点：头部和尾部都可以入队和出队，因此它同时实现了 Queue 和 Stack 的功能。push从头部入队，add从尾部入队
-，pop从头部出队，removeLast从尾部出队
 /
 ✅二叉树的中序遍历（递归+迭代）
 // 获取并删除队头元素   String head = queue.poll();
@@ -78,7 +75,7 @@ String 类型变量 String digits ,  digits.length()
 前k个高频元素
 
 爬楼梯
-✅打家劫舍1/2
+打家劫舍1/2
 买卖股票最佳时机1/2/3
 零钱兑换
 单词拆分
@@ -88,4 +85,4 @@ String 类型变量 String digits ,  digits.length()
 编辑距离
 
 
-快速排序/冒泡排序/堆排序
+快速排序/冒泡排序
