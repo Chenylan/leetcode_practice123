@@ -64,6 +64,11 @@ Deque :（双端队列）— 两端都能操作。特点：头部和尾部都可
 
 String 类型变量 String digits ,  digits.length()
 
+java String类中substring用法
+let str = "abcdefghijklmn";
+let res = str.substring(2, 6);
+console.log(res); // 输出 "cdef"
+
 ✅子集 （模版背）
 ✅全排列  (模版背）
 ✅组合总和
@@ -83,9 +88,9 @@ String 类型变量 String digits ,  digits.length()
 零钱兑换
 单词拆分
 最长递增子序列
-最长回文子串
+✅最长回文子串  （记住奇偶情况的边界条件）
 最长公共子序列
-编辑距离
+✅编辑距离    注意填充arrays的填充方法
 
 
-快速排序/冒泡排序/堆排序
+快速排序/冒泡排序/堆排序/归并排序
