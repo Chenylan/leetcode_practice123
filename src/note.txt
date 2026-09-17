@@ -1,6 +1,5 @@
 常考题目
-对自己的分支进行修改
-第四次修改
+
 
 ✅最长连续序列 (记思路)。 集合用法： Set<Integer> st = new HashSet<>(); st.contains(x)
 
@@ -9,7 +8,7 @@
 ✅三数之和      数组方法：Arrays.sort(nums),   nums.length-1;   Arrays.asList()   new ArrayList<>().add()
 ✅接雨水       规律：min(最大前缀，最大后缀)-当前高度=当前桶可容纳最大值
 
-无重复字符的最长字串  String 长度 string.length()   第k个位置字符串 (s.charAt(i))   转为char  char [] ss=s.toCharArray();
+无重复字符的最长字串  String 长度 string.length()   第k个位置字符串 (s.charAt(i))   转为char  char [] ss=s.toCharArray(); 第k个字符串ss[k]
 
 ⚠️和为k的子数组
 ✅滑动窗口最大值 。   一共有(n-k+1)个窗口，如何构造递减队列？  常规方法和自己写的超时方法
@@ -47,7 +46,8 @@ size()：返回Map中键值对的数量。
 /**本节点+递归左右节点
 Queue : 先进先出。特点：只能从尾部入队（offer/add），从头部出队（poll/remove）
 Deque :（双端队列）— 两端都能操作。特点：头部和尾部都可以入队和出队，因此它同时实现了 Queue 和 Stack 的功能。push从头部入队，add从尾部入队
-，pop从头部出队，removeLast从尾部出队
+，pop(pull)从头部出队，removeLast从尾部出队
+Queue 判断是否为空 queue.isEmpty()
 /
 ✅二叉树的中序遍历（递归+迭代）
 // 获取并删除队头元素   String head = queue.poll();
@@ -56,11 +56,13 @@ Deque :（双端队列）— 两端都能操作。特点：头部和尾部都可
 ✅二叉树的层序遍历
 从前序和中序遍历构造二叉树
 ✅二叉树的最近公共祖先 。 结合动画记忆
-路径总和3
-⚠️二叉树的右视图
+✅路径总和3     记下来
+✅ 二叉树的直径，二叉树的最大路径和
+✅二叉树的右视图 （参考层序遍历后自己解决，但dfs方法要再看）
 
 
 ✅岛屿数量   思路有意思。二维数组表示方法 。int[][] dirs = new int[][]{{1,0},{-1,0},{0,-1},{0,1}};
+课程表
 
 String 类型变量 String digits ,  digits.length()
 
@@ -93,4 +95,4 @@ console.log(res); // 输出 "cdef"
 ✅编辑距离    注意填充arrays的填充方法
 
 
-快速排序/冒泡排序/堆排序/归并排序
+✅快速排序/冒泡排序/堆排序/归并排序
